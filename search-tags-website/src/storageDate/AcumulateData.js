@@ -1,23 +1,28 @@
-var AcumulateData = /** @class */ (function () {
-    function AcumulateData() {
+class AcumulateData {
+    constructor() {
         this.setNameTags = {};
     }
+
     // Retorna todo o dicionário
-    AcumulateData.prototype.getNameTags = function () {
+    getNameTags() {
         return this.setNameTags;
-    };
-    AcumulateData.prototype.findNameTag = function (nameTag) {
-        var tagValue = this.setNameTags[nameTag];
+    }
+
+    findNameTag(nameTag) {
+        const tagValue = this.setNameTags[nameTag];
         return tagValue !== undefined ? tagValue : null;
-    };
-    AcumulateData.prototype.add = function (nameTag) {
+    }
+
+    add(nameTag) {
         if (!this.setNameTags[nameTag])
             this.setNameTags[nameTag] = 1;
         else
             this.setNameTags[nameTag] += 1;
-    };
-    AcumulateData.prototype.toString = function () {
+    }
+
+    toString() {
         return JSON.stringify(this.setNameTags);
-    };
-    return AcumulateData;
-}());
+    }
+}
+
+module.exports = AcumulateData;
