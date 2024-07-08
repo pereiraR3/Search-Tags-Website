@@ -1,0 +1,17 @@
+/* Tailwind CSS Framework */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Personalizados */
+body {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F9F9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
