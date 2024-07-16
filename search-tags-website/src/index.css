@@ -6,11 +6,24 @@
 /* Estilos Personalizados */
 body {
   margin: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F9F9F9;
+  background-color: #FFF;
 }
+
+.ellipse-background {
+  position: absolute;
+  width: 740.2px;  
+  height: 572.75px;
+  right: 0;         
+  top: 0;           
+  background: url('./imgs/mancha.png') no-repeat right top;
+  background-size: cover; 
+  z-index: -1; 
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
