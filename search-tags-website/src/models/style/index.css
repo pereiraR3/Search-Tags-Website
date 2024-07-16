@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.components-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea os filhos à esquerda */
+    gap: 10px; /* Espaçamento entre o search-container e o Dropdown */
+    margin-top: 15rem;
+    margin-left: 3rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre elementos internos */
+}
+
+.anime-gif {
+    position: absolute; /* Changed from relative for more control */
+    right: 8%; /* Adjust as needed to move closer to mancha.png */
+    top: 45%; /* Adjust based on your layout needs */
+    width: 40%;
+    transform: translateY(-55%); /* Centers the GIF vertically relative to its position */
+    
+}
+
+#titleH1{
+    font-size: 2.5rem;
+    text-align: left;
+    color: #DF140C;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 2.0rem;
+}
